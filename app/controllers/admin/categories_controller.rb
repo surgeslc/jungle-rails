@@ -25,13 +25,12 @@ class Admin::CategoriesController < ApplicationController
   # POST /admin/categories
   # POST /admin/categories.json
   def create
-    byebug
     @admin_category = Category.new(admin_category_params)
 
     respond_to do |format|
       if @admin_category.save
-        format.html { redirect_to @admin_category, notice: 'Category was successfully created.' }
-        format.json { render :show, status: :created, location: @admin_category }
+        format.html { redirect_to :admin_categories, notice: 'Category was successfully created.' }
+        format.json { render :show, status: :created, location: :admin_categories }
       else
         format.html { render :new }
         format.json { render json: @admin_category.errors, status: :unprocessable_entity }
@@ -71,7 +70,6 @@ class Admin::CategoriesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def admin_category_params
-      params.require(:category).permit(
-      :name)
+      params.require(:category).permit(:name)
     end
 end
