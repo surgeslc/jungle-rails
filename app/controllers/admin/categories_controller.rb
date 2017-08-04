@@ -25,6 +25,7 @@ class Admin::CategoriesController < ApplicationController
   # POST /admin/categories
   # POST /admin/categories.json
   def create
+    byebug
     @admin_category = Category.new(admin_category_params)
 
     respond_to do |format|
@@ -70,6 +71,7 @@ class Admin::CategoriesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def admin_category_params
-      params.fetch(:admin_category, {})
+      params.require(:category).permit(
+      :name)
     end
 end
