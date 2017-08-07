@@ -1,6 +1,6 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example, and an assigned project during Lighthouse Labs' (lighthouselabs.ca) Web Developer Bootcamp. A number of major and minor enhancements are sought, so with limited time to submit the project, a developer must decide which features to implement.
+A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example, and an assigned project during Lighthouse Labs' (lighthouselabs.ca) Web Developer Bootcamp. A number of major and minor enhancements are sought, so with limited time to submit the project, a developer must decide which to implement.
 
 These features have been implemented:
 1)  A Sold Out badge is shown on any product whose stock level is zero,
