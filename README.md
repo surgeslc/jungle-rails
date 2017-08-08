@@ -7,7 +7,11 @@ These features have been implemented:
 2)  A user can add new product categories, and add products to categories.
 3)  A visitor can register (and continue) as a user; users can login or out, and the current user's displayed.
 
-The next up is to provide more detail about Order, and the Order page and partials for its line items can be handled similarly to how a cart and its items are handled. However, I'll submit, do some current work, then come back to this, as Speed Dating's tomorrow (August 8th).
+See the Screenshots folder for an image which shows the Sold Out badge, an added product (a bike) in an added category (Transportation), the current logged in user (connie@munk.com), and a Logout link.
+
+
+
+The next enhancement up is to provide more detail about Order: That Order page and partials for line items can be handled similarly to a cart and its items. However, I'll submit, do some current work, then come back to this, as Speed Dating in Victoria's tomorrow (August 8th).
 
 
 ## Dependencies
