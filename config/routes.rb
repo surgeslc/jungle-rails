@@ -18,10 +18,15 @@ Rails.application.routes.draw do
     resources :categories, except: [:edit, :update, :show, :destroy]
   end
 
-  # Routes for signup. The first renders a form in the browse, the second receives
-  # the form and creates a user in the database using data submitted by the user.
-    get '/signup' => 'users#new'
-    post '/users' => 'users#create'
+  # Routes to show users a login form, log them in, and log them out.
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+  get '/logout' => 'sessions#destroy'
+
+  # Routes to sign up. The first renders a form in the browser, the second receives
+  # the form and creates a user in the database with user-submitted data.
+  get '/signup' => 'users#new'
+  post '/users' => 'users#create'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

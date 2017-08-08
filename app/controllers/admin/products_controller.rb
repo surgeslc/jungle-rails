@@ -1,5 +1,8 @@
 class Admin::ProductsController < ApplicationController
 
+  # Access requires authentication
+  # before_filter :authorize
+
   def index
     @products = Product.order(id: :desc).all
   end

@@ -1,4 +1,8 @@
 class Admin::CategoriesController < ApplicationController
+
+  # Access requires authentication
+  # before_filter :authorize
+
   # before_action :set_admin_category, only: [:show, :edit, :update, :destroy]
   before_action :set_admin_category, only: [:show, :edit, :update]
 
